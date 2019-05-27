@@ -1,0 +1,71 @@
+{
+  "project": {
+    "name": "OECD",
+    "quality": 1
+ },
+  "loader": {
+    "info": "data/info.md",
+    "timeline": "data/timeline.csv",
+    "items": "data/data.csv",
+    "tsne": "data/tsne.csv",
+    "textures": {
+      "medium": {
+        "size": 64,
+        "url": "data/sprites/web_web_full.json"
+      },
+      "detail": {
+        "size": 1024,
+        "url": "data/1024/"
+      },
+      "big": {
+        "size": 4096,
+        "url": "data/4096/"
+      }
+    }
+  },
+  "style": {
+    "fontColor": "#666",
+    "fontColorActive": "#eae2cb",
+    "fontBackground": "#295b71",
+    "textShadow": "1px 1px 0px #f8f4e9",
+    "canvasBackground": "#ffffff",
+    "timelineBackground": "#0bb89c",
+    "timelineFontColor": "#0b71b0",
+    "backgroundHeader": "#035151",
+    "fontColorHeader": "#0b71b0",
+    "detailBackground": "#EEE",
+    "infoBackground": "#c8c8c8",
+    "infoFontColor": "#666",
+    "searchbarBackground": "#037bc1"
+  },
+  "projection": {
+    "columns": 19
+  },
+  "detail": {
+    "structure": [      
+      {
+        "name": "Year",
+        "source": "_year",
+        "display": "wide",
+        "type": "text"
+      },{
+        "name": "Legend",
+        "source": "_desc",
+        "display": "wide",
+        "type": "text"
+      },
+      {
+        "name": "Hashtags",
+        "source": "_keywords",
+        "display": "wide",
+        "type": "array"
+      },
+      {
+        "name": "Source",
+        "source": "_url",
+        "display": "wide",
+        "type": "text"
+      }
+    ]
+  }
+}
